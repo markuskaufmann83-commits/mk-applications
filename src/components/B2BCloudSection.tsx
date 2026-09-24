@@ -19,7 +19,7 @@ export const B2BCloudSection: React.FC = () => {
       step: '02',
       title: 'Serverless Backend API',
       tech: 'Azure Functions (Node/TS)',
-      desc: 'Keine dauerhaft laufenden virtuellen Maschinen. Rechenkapazität startet und skaliert bedarfsgerecht in Millisekunden – 0 € Grundkosten bei Leerlauf.',
+      desc: 'Keine dauerhaft überdimensionierten Server. Rechenkapazität startet und skaliert bedarfsgerecht in Millisekunden – maximale Effizienz ohne teuren Leerlauf-Overhead.',
     },
     {
       step: '03',
@@ -61,9 +61,9 @@ export const B2BCloudSection: React.FC = () => {
                   <span className="text-[10px] text-slate-500 font-semibold block uppercase">
                     Klassische Server
                   </span>
-                  <div className="text-xl font-bold text-rose-600 mt-1">ab 150 € / Mtl.</div>
+                  <div className="text-xl font-bold text-rose-600 mt-1">Hoher Overhead</div>
                   <span className="text-[11px] text-slate-500 block mt-1">
-                    Feste Kosten auch nachts und bei Null Zugriffen
+                    Feste Servermieten, manuelle Wartung und bezahlter Leerlauf
                   </span>
                 </div>
 
@@ -72,9 +72,9 @@ export const B2BCloudSection: React.FC = () => {
                   <span className="text-[10px] text-cyan-400 font-bold block uppercase font-mono">
                     MK Applications Azure
                   </span>
-                  <div className="text-xl font-bold text-white mt-1">0,00 € / Mtl.</div>
+                  <div className="text-xl font-bold text-white mt-1">Bis zu 80% Einsparung</div>
                   <span className="text-[11px] text-slate-300 block mt-1">
-                    Free Tier Kontingent & Pay-per-Execution
+                    Bedarfsgerechte Skalierung ohne Leerlauf-Verschwendung
                   </span>
                 </div>
               </div>

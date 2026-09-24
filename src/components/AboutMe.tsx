@@ -66,14 +66,14 @@ export const AboutMe: React.FC = () => {
               <p>
                 Hallo, ich bin <strong className="text-slate-900 font-bold">Markus Kaufmann</strong>,
                 Inhaber und leitender Softwarearchitekt von MK Applications. Ich entwickle robuste,
-                zukunftssichere Webanwendungen und Vereinsplattformen, die exakt auf die Bedürfnisse
-                ihrer Anwender zugeschnitten sind.
+                zukunftssichere Webanwendungen, Fachportale und Cloud-Lösungen, die exakt auf die Anforderungen
+                moderner Organisationen und Unternehmen zugeschnitten sind.
               </p>
               <p>
                 Mein Schwerpunkt liegt in der Schnittmenge aus moderner Webtechnologie (React, TypeScript,
                 PWAs) und hochwirtschaftlichen Cloud-Architekturen auf Microsoft Azure. Ob
-                Vereinsplattform oder B2B-Plattform: Ich begleite Sie partnerschaftlich von der ersten
-                Konzeption bis zum produktiven Dauerbetrieb.
+                mandantenfähiges Unternehmensportal, mobile PWA oder B2B-Prozessdigitalisierung: Ich begleite Sie
+                partnerschaftlich von der ersten Architekturkonzeption bis zum produktiven Dauerbetrieb.
               </p>
             </div>
 

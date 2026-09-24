@@ -29,10 +29,10 @@ export const ContactForm: React.FC = () => {
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
   const projectTypes = [
-    { label: 'Vereins-App & PWA', icon: Users2 },
-    { label: 'B2B Web-App & Cloud', icon: LayoutDashboard },
-    { label: 'Store-App (iOS/Android)', icon: Smartphone },
-    { label: 'Beratung / Architektur', icon: HelpCircle },
+    { label: 'Web-App & Portallösung', icon: LayoutDashboard },
+    { label: 'B2B Cloud & Schnittstellen', icon: Users2 },
+    { label: 'Mobile PWA / Store-App', icon: Smartphone },
+    { label: 'Architektur-Sparring & Review', icon: HelpCircle },
   ];
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -111,8 +111,8 @@ export const ContactForm: React.FC = () => {
             </h2>
 
             <p className="text-base text-slate-600 leading-relaxed font-normal">
-              Ob Sie eine unverbindliche Ersteinschätzung für Ihren Verein suchen oder eine
-              skalierbare Cloud-Lösung für Ihr Unternehmen planen: Schreiben Sie mir direkt. Ich
+              Ob Sie eine unverbindliche Ersteinschätzung für ein Portalprojekt suchen oder eine
+              skalierbare Cloud-Architektur für Ihr Vorhaben planen: Schreiben Sie mir direkt. Ich
               antworte Ihnen verbindlich innerhalb von 24 Stunden.
             </p>
 
@@ -159,7 +159,7 @@ export const ContactForm: React.FC = () => {
                     Reaktionsgarantie
                   </div>
                   <div className="text-sm font-bold text-slate-950">Innerhalb 24 Stunden</div>
-                  <div className="text-xs text-slate-500">Persönlich, verlässlich & kostenfrei</div>
+                  <div className="text-xs text-slate-500">Persönlich, verlässlich & unverbindlich</div>
                 </div>
               </div>
             </div>

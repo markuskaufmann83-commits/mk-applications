@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   Smartphone,
-  Users2,
   CloudCog,
   LayoutDashboard,
   Check,
@@ -42,38 +41,38 @@ export const Services: React.FC = () => {
             <div>
               <div className="flex items-center justify-between mb-6">
                 <div className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-cyan-500 to-electric-400 text-slate-950 flex items-center justify-center font-bold shadow-lg">
-                  <Users2 className="w-6 h-6" />
+                  <LayoutDashboard className="w-6 h-6" />
                 </div>
                 <span className="text-xs font-bold text-cyan-300 bg-cyan-950/80 border border-cyan-800/80 px-3 py-1 rounded-full font-mono">
-                  Spezialisierung #01
+                  Kernkompetenz #01
                 </span>
               </div>
 
               <h3 className="text-2xl sm:text-3xl font-bold tracking-tight text-white mb-3">
-                Vereins- & Verbandssoftware
+                Web-Apps & Plattform-Portale
               </h3>
               <p className="text-sm sm:text-base text-slate-300 leading-relaxed mb-6 max-w-xl">
-                Modulare, multi-tenantfähige Plattformen für Nischenvereine (Fischerei, Schützen,
-                Wassersport), die Standardprogramme überfordern oder einschränken.
+                Modulare, mandantenfähige Portale und Fachanwendungen für Unternehmen, Verbände und Organisationen.
+                Maßgeschneiderte Workflows, Rollenberechtigungen und responsive Benutzeroberflächen.
               </p>
 
               {/* Feature Chips */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
                 <div className="flex items-center gap-2.5 text-xs sm:text-sm text-slate-200 bg-slate-800/60 p-2.5 rounded-xl border border-slate-700/60">
                   <QrCode className="w-4 h-4 text-cyan-400 flex-shrink-0" />
-                  <span>Kryptografische QR-Ausweise</span>
+                  <span>Kryptografische QR-Token</span>
                 </div>
                 <div className="flex items-center gap-2.5 text-xs sm:text-sm text-slate-200 bg-slate-800/60 p-2.5 rounded-xl border border-slate-700/60">
                   <Check className="w-4 h-4 text-cyan-400 flex-shrink-0" />
-                  <span>Arbeitsdienst-Tracker mit PIN</span>
+                  <span>Granulares Rollen- & Rechtesystem</span>
                 </div>
                 <div className="flex items-center gap-2.5 text-xs sm:text-sm text-slate-200 bg-slate-800/60 p-2.5 rounded-xl border border-slate-700/60">
                   <Check className="w-4 h-4 text-cyan-400 flex-shrink-0" />
-                  <span>Digitales Fang- & Streckenbuch</span>
+                  <span>Strukturierte Audit- & Prüfprotokolle</span>
                 </div>
                 <div className="flex items-center gap-2.5 text-xs sm:text-sm text-slate-200 bg-slate-800/60 p-2.5 rounded-xl border border-slate-700/60">
                   <ShieldCheck className="w-4 h-4 text-emerald-400 flex-shrink-0" />
-                  <span>100% DSGVO & Rollenrechte</span>
+                  <span>100% DSGVO & Mandantentrennung</span>
                 </div>
               </div>
             </div>
@@ -81,10 +80,10 @@ export const Services: React.FC = () => {
             <div className="pt-6 border-t border-slate-800 flex items-center justify-between">
               <span className="text-xs text-slate-400 font-mono">React &bull; TypeScript &bull; Multi-Tenant</span>
               <a
-                href="#vereinsplattform"
+                href="#plattformen"
                 className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-cyan-400 hover:text-cyan-300 transition-colors group-hover:translate-x-1 duration-200"
               >
-                <span>Live-Showcase ansehen</span>
+                <span>Plattform-Showcase ansehen</span>
                 <ArrowRight className="w-4 h-4" />
               </a>
             </div>
@@ -117,7 +116,7 @@ export const Services: React.FC = () => {
                 </div>
                 <div className="flex items-center gap-2">
                   <Check className="w-3.5 h-3.5 text-cyan-600 flex-shrink-0" />
-                  <span>Push-Mitteilungen für Vorstände & Kunden</span>
+                  <span>Push-Mitteilungen & Echtzeit-Benachrichtigungen</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Check className="w-3.5 h-3.5 text-cyan-600 flex-shrink-0" />
@@ -146,7 +145,7 @@ export const Services: React.FC = () => {
                   <CloudCog className="w-6 h-6" />
                 </div>
                 <span className="text-xs font-bold text-slate-700 bg-white border border-slate-200 px-3 py-1 rounded-full shadow-2xs font-mono">
-                  0 € Leerlauf
+                  Pay-per-Use Cloud
                 </span>
               </div>
 
@@ -154,8 +153,8 @@ export const Services: React.FC = () => {
                 Managed Azure Cloud & Serverless
               </h3>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-6">
-                Wirtschaftliche Cloud-Infrastruktur auf Microsoft Azure. Keine teuren Monatsmieten für
-                leere Serverkapazitäten – Sie zahlen nur bei tatsächlichen Nutzeraufrufen.
+                Wirtschaftliche Cloud-Infrastruktur auf Microsoft Azure: Bedarfsgerechte Skalierung ohne teuren
+                Server-Overhead – maximale Performance bei optimierten Betriebskosten.
               </p>
 
               <div className="space-y-2.5 mb-6 text-xs text-slate-700">

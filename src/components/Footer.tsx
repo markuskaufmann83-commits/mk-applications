@@ -22,12 +22,12 @@ export const Footer: React.FC<FooterProps> = ({ onOpenLegal }) => {
           <div className="md:col-span-5 space-y-4">
             <Logo size="md" isDark={true} />
             <p className="text-xs sm:text-sm text-slate-400 max-w-sm leading-relaxed font-normal">
-              MK Applications entwickelt moderne Progressive Web Apps, Multi-Tenant Vereinsplattformen
-              und wirtschaftliche Cloud-Lösungen auf Microsoft Azure – maßgeschneidert aus Bielefeld.
+              MK Applications entwickelt moderne Web-Apps, maßgeschneiderte Portallösungen
+              und hochperformante Cloud-Architekturen auf Microsoft Azure – aus Bielefeld.
             </p>
             <div className="flex items-center gap-2 text-xs text-cyan-400 font-mono pt-1">
               <Cloud className="w-4 h-4" />
-              <span>Optimiert für Azure Static Web Apps (Free Tier)</span>
+              <span>Enterprise Cloud-Architektur auf Microsoft Azure</span>
             </div>
           </div>
 
@@ -43,8 +43,8 @@ export const Footer: React.FC<FooterProps> = ({ onOpenLegal }) => {
                 </a>
               </li>
               <li>
-                <a href="#vereinsplattform" className="text-slate-400 hover:text-cyan-400 transition-colors">
-                  Die Vereinsplattform
+                <a href="#plattformen" className="text-slate-400 hover:text-cyan-400 transition-colors">
+                  Plattform-Lösungen
                 </a>
               </li>
               <li>

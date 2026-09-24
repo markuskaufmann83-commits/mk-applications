@@ -13,7 +13,7 @@ export interface ApiResponse<T = unknown> {
   data?: T;
 }
 
-export type ClubTheme = {
+export type TenantTheme = {
   id: string;
   name: string;
   category: string;
@@ -24,3 +24,6 @@ export type ClubTheme = {
   tagline: string;
   modules: string[];
 };
+
+// Backward-compatibility alias
+export type ClubTheme = TenantTheme;

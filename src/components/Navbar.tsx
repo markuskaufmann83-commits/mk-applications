@@ -20,7 +20,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenLegal: _onOpenLegal }) => 
 
   const navLinks = [
     { name: 'Leistungen', href: '#leistungen' },
-    { name: 'Vereinslösung', href: '#vereinsplattform' },
+    { name: 'Plattform-Lösungen', href: '#plattformen' },
     { name: 'B2B & Cloud', href: '#b2b-cloud' },
     { name: 'Über mich', href: '#ueber-mich' },
     { name: 'Kontakt', href: '#kontakt' },

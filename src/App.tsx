@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { Services } from './components/Services';
-import { ClubPlatformShowcase } from './components/ClubPlatformShowcase';
+import { PlatformShowcase } from './components/PlatformShowcase';
 import { B2BCloudSection } from './components/B2BCloudSection';
 import { AboutMe } from './components/AboutMe';
 import { ContactForm } from './components/ContactForm';
@@ -27,7 +27,7 @@ export const App: React.FC = () => {
       <main className="flex-grow">
         <Hero />
         <Services />
-        <ClubPlatformShowcase />
+        <PlatformShowcase />
         <B2BCloudSection />
         <AboutMe />
         <ContactForm />

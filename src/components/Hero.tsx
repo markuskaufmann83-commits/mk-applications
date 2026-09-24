@@ -33,8 +33,8 @@ export const Hero: React.FC = () => {
 
             {/* Subheadline */}
             <p className="text-lg sm:text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto lg:mx-0 font-normal">
-              Von der modularen Vereins-App bis zur individuellen Cloud-Plattform: Leistungsstarke
-              Softwarearchitektur für Organisationen und Macher – ohne Agentur-Wasserkopf.
+              Von der maßgeschneiderten Webanwendung bis zur hochskalierbaren Cloud-Plattform: Leistungsstarke
+              Softwarearchitektur für Unternehmen, Institutionen und Organisationen – ohne Agentur-Wasserkopf.
             </p>
 
             {/* Action Buttons */}
@@ -48,7 +48,7 @@ export const Hero: React.FC = () => {
               </a>
 
               <a
-                href="#vereinsplattform"
+                href="#plattformen"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-4 text-base font-semibold text-slate-800 bg-white hover:bg-slate-50 border border-slate-300 rounded-xl shadow-sm hover:shadow transition-all duration-200"
               >
                 <span>Lösungen entdecken</span>
@@ -58,9 +58,9 @@ export const Hero: React.FC = () => {
             {/* Metrics Bar */}
             <div className="pt-6 border-t border-slate-200/80 grid grid-cols-3 gap-4 text-left">
               <div>
-                <div className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight">0,00 €</div>
+                <div className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight">&gt; 99,9%</div>
                 <div className="text-[11px] font-semibold text-slate-500 uppercase tracking-wider mt-0.5">
-                  Server-Leerlauf
+                  Enterprise Uptime
                 </div>
               </div>
 
