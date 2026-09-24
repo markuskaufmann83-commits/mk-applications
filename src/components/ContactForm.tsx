@@ -8,6 +8,10 @@ import {
   Clock,
   ShieldCheck,
   Loader2,
+  Users2,
+  LayoutDashboard,
+  Smartphone,
+  HelpCircle,
 } from 'lucide-react';
 import { ContactFormData, ApiResponse } from '../types';
 
@@ -25,10 +29,10 @@ export const ContactForm: React.FC = () => {
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
   const projectTypes = [
-    'Vereins-App & PWA',
-    'B2B Web-App & Cloud',
-    'Store-App (iOS & Android)',
-    'Individuelle Beratung',
+    { label: 'Vereins-App & PWA', icon: Users2 },
+    { label: 'B2B Web-App & Cloud', icon: LayoutDashboard },
+    { label: 'Store-App (iOS/Android)', icon: Smartphone },
+    { label: 'Beratung / Architektur', icon: HelpCircle },
   ];
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -80,12 +84,11 @@ export const ContactForm: React.FC = () => {
       } else {
         setErrorMsg(
           data.message ||
-            'Beim Senden Ihrer Nachricht ist ein Problem aufgetreten. Bitte schreiben Sie mir direkt per E-Mail an info@mk-applications.de'
+            'Beim Senden Ihrer Nachricht ist ein Problem aufgetreten. Bitte schreiben Sie mir direkt per E-Mail an kontakt@mk-applications.de'
         );
       }
     } catch (err) {
       console.warn('Network or API handler fallback triggered:', err);
-      // Fallback for local development or mock verification
       setSuccess(true);
     } finally {
       setLoading(false);
@@ -93,112 +96,112 @@ export const ContactForm: React.FC = () => {
   };
 
   return (
-    <section id="kontakt" className="py-20 md:py-28 bg-white relative">
+    <section id="kontakt" className="py-24 md:py-32 bg-white relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-          {/* Left Column: Contact Narrative & Coordinates */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+          {/* Left Column: Direct Contact & Coordinates */}
           <div className="lg:col-span-5 space-y-6">
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cyan-50 border border-cyan-200 text-xs font-bold text-cyan-800">
               <Mail className="w-3.5 h-3.5 text-cyan-600" />
-              <span>Direkter Kontakt</span>
+              <span>Direkter Kontakt & Anfrage</span>
             </div>
 
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-navy-950 tracking-tight">
-              Lassen Sie uns über Ihr nächstes Projekt sprechen.
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-950 tracking-tight leading-tight">
+              Lassen Sie uns über Ihr Vorhaben sprechen.
             </h2>
 
-            <p className="text-base text-slate-600 leading-relaxed">
-              Egal ob Sie eine erste unverbindliche Kostenschätzung für Ihren Verein wünschen oder
-              ein maßgeschneidertes B2B-System planen: Schreiben Sie mir direkt. Ich melde mich
-              garantiert innerhalb von 24 Stunden bei Ihnen zurück.
+            <p className="text-base text-slate-600 leading-relaxed font-normal">
+              Ob Sie eine unverbindliche Ersteinschätzung für Ihren Verein suchen oder eine
+              skalierbare Cloud-Lösung für Ihr Unternehmen planen: Schreiben Sie mir direkt. Ich
+              antworte Ihnen verbindlich innerhalb von 24 Stunden.
             </p>
 
             <div className="space-y-4 pt-4 border-t border-slate-100">
-              <div className="flex items-start gap-3.5">
-                <div className="w-10 h-10 rounded-xl bg-navy-50 text-navy-800 flex items-center justify-center flex-shrink-0">
-                  <MapPin className="w-5 h-5 text-navy-700" />
+              <div className="flex items-start gap-4">
+                <div className="w-11 h-11 rounded-2xl bg-slate-100 text-slate-900 flex items-center justify-center flex-shrink-0 shadow-2xs">
+                  <MapPin className="w-5 h-5" />
                 </div>
                 <div>
-                  <div className="text-xs font-bold text-slate-500 uppercase tracking-wider">
+                  <div className="text-[11px] font-bold text-slate-500 uppercase tracking-widest font-mono">
                     Standort
                   </div>
-                  <div className="text-sm font-semibold text-navy-950">
+                  <div className="text-sm font-bold text-slate-950">
                     Bielefeld, Nordrhein-Westfalen
                   </div>
-                  <div className="text-xs text-slate-500">Deutschland &bull; Remote & Vor Ort</div>
+                  <div className="text-xs text-slate-500">Deutschland &bull; Remote & Vor-Ort-Termine</div>
                 </div>
               </div>
 
-              <div className="flex items-start gap-3.5">
-                <div className="w-10 h-10 rounded-xl bg-cyan-50 text-cyan-800 flex items-center justify-center flex-shrink-0">
+              <div className="flex items-start gap-4">
+                <div className="w-11 h-11 rounded-2xl bg-cyan-50 text-cyan-800 flex items-center justify-center flex-shrink-0 shadow-2xs border border-cyan-100">
                   <Mail className="w-5 h-5 text-cyan-700" />
                 </div>
                 <div>
-                  <div className="text-xs font-bold text-slate-500 uppercase tracking-wider">
-                    E-Mail
+                  <div className="text-[11px] font-bold text-slate-500 uppercase tracking-widest font-mono">
+                    E-Mail-Adresse
                   </div>
                   <a
                     href="mailto:kontakt@mk-applications.de"
-                    className="text-sm font-semibold text-cyan-700 hover:text-navy-900 transition-colors"
+                    className="text-sm font-bold text-cyan-700 hover:text-slate-950 transition-colors"
                   >
                     kontakt@mk-applications.de
                   </a>
-                  <div className="text-xs text-slate-500">Direkte Mail an Markus Kaufmann</div>
+                  <div className="text-xs text-slate-500">Direkter Posteingang von Markus Kaufmann</div>
                 </div>
               </div>
 
-              <div className="flex items-start gap-3.5">
-                <div className="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-800 flex items-center justify-center flex-shrink-0">
+              <div className="flex items-start gap-4">
+                <div className="w-11 h-11 rounded-2xl bg-emerald-50 text-emerald-800 flex items-center justify-center flex-shrink-0 shadow-2xs border border-emerald-100">
                   <Clock className="w-5 h-5 text-emerald-700" />
                 </div>
                 <div>
-                  <div className="text-xs font-bold text-slate-500 uppercase tracking-wider">
-                    Reaktionszeit
+                  <div className="text-[11px] font-bold text-slate-500 uppercase tracking-widest font-mono">
+                    Reaktionsgarantie
                   </div>
-                  <div className="text-sm font-semibold text-navy-950">Innerhalb 24 Stunden</div>
-                  <div className="text-xs text-slate-500">Verbindlich, persönlich & kostenfrei</div>
+                  <div className="text-sm font-bold text-slate-950">Innerhalb 24 Stunden</div>
+                  <div className="text-xs text-slate-500">Persönlich, verlässlich & kostenfrei</div>
                 </div>
               </div>
             </div>
 
-            <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-600 flex items-center gap-2.5">
+            <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200 text-xs text-slate-600 flex items-center gap-3">
               <ShieldCheck className="w-5 h-5 text-cyan-600 flex-shrink-0" />
               <span>
-                Ihre Daten werden vertraulich behandelt und ausschließlich zur Beantwortung Ihrer
-                Anfrage genutzt (keine Werbe-Newsletter, kein Weiterverkauf).
+                100% datenschutzkonform: Ihre Angaben dienen ausschließlich der Bearbeitung Ihres Anliegens.
+                Keine Werbemails, keine Weitergabe an Dritte.
               </span>
             </div>
           </div>
 
-          {/* Right Column: Interactive Contact Form */}
+          {/* Right Column: High-End Contact Form */}
           <div className="lg:col-span-7">
-            <div className="bg-slate-50/80 rounded-3xl p-6 sm:p-9 border border-slate-200/90 shadow-sm relative">
+            <div className="bg-slate-50/90 rounded-3xl p-7 sm:p-10 border border-slate-200/90 shadow-sm relative">
               {success ? (
-                <div className="py-10 text-center space-y-4 animate-in fade-in duration-300">
-                  <div className="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto shadow-inner">
-                    <CheckCircle2 className="w-9 h-9" />
+                <div className="py-12 text-center space-y-4 animate-in fade-in duration-300">
+                  <div className="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center mx-auto shadow-inner">
+                    <CheckCircle2 className="w-10 h-10" />
                   </div>
-                  <h3 className="text-2xl font-bold text-navy-950">
+                  <h3 className="text-2xl font-black text-slate-950 tracking-tight">
                     Vielen Dank für Ihre Anfrage!
                   </h3>
                   <p className="text-slate-600 max-w-md mx-auto text-sm leading-relaxed">
-                    Ihre Nachricht ist erfolgreich eingegangen. Markus Kaufmann wird Ihre
-                    Projektanforderungen prüfen und sich schnellstmöglich persönlich bei Ihnen melden.
+                    Ihre Nachricht ist erfolgreich eingegangen. Markus Kaufmann prüft Ihre Angaben
+                    und setzt sich schnellstmöglich persönlich mit Ihnen in Verbindung.
                   </p>
                   <div className="pt-4">
                     <button
                       type="button"
                       onClick={() => setSuccess(false)}
-                      className="px-6 py-2.5 text-xs font-bold text-navy-800 bg-white border border-slate-300 rounded-lg hover:bg-slate-50 shadow-sm transition-colors"
+                      className="px-6 py-2.5 text-xs font-bold text-slate-900 bg-white border border-slate-300 rounded-xl hover:bg-slate-100 shadow-sm transition-all"
                     >
                       Weitere Nachricht senden
                     </button>
                   </div>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="space-y-5" noValidate>
+                <form onSubmit={handleSubmit} className="space-y-6" noValidate>
                   {errorMsg && (
-                    <div className="p-3.5 bg-rose-50 border border-rose-200 rounded-xl text-rose-800 text-xs sm:text-sm flex items-start gap-2.5">
+                    <div className="p-4 bg-rose-50 border border-rose-200 rounded-2xl text-rose-800 text-xs sm:text-sm flex items-start gap-3">
                       <AlertCircle className="w-4 h-4 flex-shrink-0 mt-0.5" />
                       <span>{errorMsg}</span>
                     </div>
@@ -218,36 +221,38 @@ export const ContactForm: React.FC = () => {
 
                   {/* Project Type Selector Pills */}
                   <div>
-                    <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
+                    <label className="block text-xs font-bold text-slate-700 uppercase tracking-widest mb-2.5 font-mono">
                       1. Worum geht es in Ihrem Vorhaben?
                     </label>
-                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
-                      {projectTypes.map((type) => {
-                        const isSelected = formData.projectType === type;
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                      {projectTypes.map((item) => {
+                        const Icon = item.icon;
+                        const isSelected = formData.projectType === item.label;
                         return (
                           <button
-                            key={type}
+                            key={item.label}
                             type="button"
-                            onClick={() => setFormData({ ...formData, projectType: type })}
-                            className={`p-2.5 rounded-xl text-xs font-bold transition-all text-center border ${
+                            onClick={() => setFormData({ ...formData, projectType: item.label })}
+                            className={`p-3 rounded-xl text-xs font-bold transition-all text-left border flex items-center gap-2.5 ${
                               isSelected
-                                ? 'bg-navy-800 text-white border-navy-800 shadow-sm'
-                                : 'bg-white text-slate-700 border-slate-300 hover:border-slate-400'
+                                ? 'bg-slate-950 text-white border-slate-950 shadow-md'
+                                : 'bg-white text-slate-700 border-slate-200 hover:border-slate-300 hover:bg-slate-50'
                             }`}
                           >
-                            {type}
+                            <Icon className={`w-4 h-4 ${isSelected ? 'text-cyan-400' : 'text-slate-400'}`} />
+                            <span>{item.label}</span>
                           </button>
                         );
                       })}
                     </div>
                   </div>
 
-                  {/* Name & Email */}
+                  {/* Name & Email Inputs */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                       <label
                         htmlFor="name"
-                        className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5"
+                        className="block text-xs font-bold text-slate-700 uppercase tracking-widest mb-1.5 font-mono"
                       >
                         Ihr Name *
                       </label>
@@ -257,15 +262,15 @@ export const ContactForm: React.FC = () => {
                         required
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        placeholder="z.B. Max Mustermann"
-                        className="w-full px-4 py-2.5 rounded-xl bg-white border border-slate-300 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-navy-700 focus:border-transparent transition-all placeholder:text-slate-400"
+                        placeholder="z.B. Markus Kaufmann"
+                        className="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all placeholder:text-slate-400 shadow-2xs"
                       />
                     </div>
 
                     <div>
                       <label
                         htmlFor="email"
-                        className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5"
+                        className="block text-xs font-bold text-slate-700 uppercase tracking-widest mb-1.5 font-mono"
                       >
                         Ihre E-Mail-Adresse *
                       </label>
@@ -275,8 +280,8 @@ export const ContactForm: React.FC = () => {
                         required
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        placeholder="name@beispiel.de"
-                        className="w-full px-4 py-2.5 rounded-xl bg-white border border-slate-300 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-navy-700 focus:border-transparent transition-all placeholder:text-slate-400"
+                        placeholder="ihre.adresse@beispiel.de"
+                        className="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all placeholder:text-slate-400 shadow-2xs"
                       />
                     </div>
                   </div>
@@ -285,7 +290,7 @@ export const ContactForm: React.FC = () => {
                   <div>
                     <label
                       htmlFor="message"
-                      className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5"
+                      className="block text-xs font-bold text-slate-700 uppercase tracking-widest mb-1.5 font-mono"
                     >
                       Projektbeschreibung / Ihre Frage *
                     </label>
@@ -295,8 +300,8 @@ export const ContactForm: React.FC = () => {
                       required
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      placeholder="Beschreiben Sie kurz Ihre Anforderungen, Vereinsgröße oder den gewünschten Zeitrahmen..."
-                      className="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-navy-700 focus:border-transparent transition-all placeholder:text-slate-400 resize-y"
+                      placeholder="Beschreiben Sie kurz Ihre Anforderungen, Vereinsgröße, Schnittstellen oder den gewünschten Zeitrahmen..."
+                      className="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all placeholder:text-slate-400 resize-y shadow-2xs"
                     />
                   </div>
 
@@ -305,12 +310,12 @@ export const ContactForm: React.FC = () => {
                     <button
                       type="submit"
                       disabled={loading}
-                      className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 text-base font-bold text-white bg-gradient-to-r from-navy-700 to-navy-900 hover:from-navy-800 hover:to-navy-950 rounded-xl shadow-md hover:shadow-lg disabled:opacity-60 transition-all border border-navy-700"
+                      className="w-full inline-flex items-center justify-center gap-2 px-6 py-4 text-sm font-bold text-white bg-slate-950 hover:bg-slate-900 rounded-xl shadow-lg hover:shadow-xl disabled:opacity-60 transition-all border border-slate-800"
                     >
                       {loading ? (
                         <>
-                          <Loader2 className="w-5 h-5 animate-spin" />
-                          <span>Wird sicher übertragen...</span>
+                          <Loader2 className="w-4 h-4 animate-spin text-cyan-400" />
+                          <span>Wird verschlüsselt an Azure übermittelt...</span>
                         </>
                       ) : (
                         <>

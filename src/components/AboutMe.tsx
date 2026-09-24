@@ -9,128 +9,135 @@ import {
 } from 'lucide-react';
 
 export const AboutMe: React.FC = () => {
-  const techStack = [
-    { name: 'TypeScript', category: 'Language', highlight: true },
-    { name: 'React / Next.js', category: 'Frontend', highlight: true },
-    { name: 'Tailwind CSS', category: 'UI & Styling', highlight: true },
-    { name: 'Microsoft Azure', category: 'Cloud Infrastructure', highlight: true },
-    { name: 'PostgreSQL / SQL', category: 'Database', highlight: true },
-    { name: 'Python', category: 'Backend & Data', highlight: true },
-    { name: 'Node.js', category: 'Serverless Runtime', highlight: false },
-    { name: 'Capacitor', category: 'iOS & Android Store', highlight: false },
-    { name: 'GitHub Actions', category: 'CI/CD Automation', highlight: false },
-    { name: 'Docker', category: 'Containerization', highlight: false },
+  const techCategories = [
+    {
+      title: 'Frontend & Mobile',
+      skills: ['TypeScript', 'React', 'Next.js', 'Tailwind CSS', 'Capacitor (Store-Apps)'],
+    },
+    {
+      title: 'Cloud & Backend',
+      skills: ['Microsoft Azure', 'Azure Functions (Serverless)', 'Node.js', 'Python', 'PostgreSQL / SQL'],
+    },
+    {
+      title: 'DevOps & Quality',
+      skills: ['GitHub Actions CI/CD', 'Docker', '100% DSGVO & Security Headers', 'Lighthouse 100/100'],
+    },
   ];
 
   const trustFactors = [
     {
       icon: Euro,
       title: 'Transparente Festpreise',
-      description: 'Verlässliche Kalkulation ohne versteckte Überraschungen oder ausufernde Stundensätze.',
+      description: 'Verlässliche Kalkulation ohne versteckte Überraschungen oder ungedeckte Stundensätze.',
     },
     {
       icon: UserCheck,
-      title: 'Persönlicher Architekt',
-      description: 'Direkter Draht zu Markus Kaufmann – keine vorgeschalteten Vertriebler oder Junior-Entwickler.',
+      title: 'Direkter Entwicklerkontakt',
+      description: 'Sie sprechen direkt mit Markus Kaufmann – ohne vorgeschaltete Vertriebs- oder Callcenter-Schleifen.',
     },
     {
       icon: ShieldCheck,
-      title: '100% DSGVO & EU-Hosting',
-      description: 'Keine Cookies, keine Datenschnüffelei. Hosting strictly nach europäischem Datenschutzstandard.',
+      title: '100% DSGVO & EU-Cloud',
+      description: 'Rechtssicher, datensparsam und ohne Cookies oder externe Überwachungswerkzeuge.',
     },
     {
       icon: Code2,
-      title: 'Kein Vendor-Lock-in',
-      description: 'Der Code gehört Ihnen. Klare Dokumentation, saubere Git-Repositories und moderne Standards.',
+      title: 'Vollständiges Code-Eigentum',
+      description: 'Der Quellcode gehört Ihnen. Vollständige Git-Übergabe, transparente Dokumentation, kein Lock-in.',
     },
   ];
 
   return (
-    <section id="ueber-mich" className="py-20 md:py-28 bg-slate-50/70 border-b border-slate-200/80 relative">
+    <section id="ueber-mich" className="py-24 md:py-32 bg-slate-50 relative border-b border-slate-200/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          {/* Left Column: Personal Intro */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          {/* Left Column: Personal Profile & Philosophy */}
           <div className="lg:col-span-6 space-y-6">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-slate-200 text-xs font-bold text-navy-800 shadow-sm">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-slate-200 text-xs font-bold text-slate-800 shadow-sm">
               <MapPin className="w-3.5 h-3.5 text-cyan-600" />
-              <span>Bielefeld &bull; Ostwestfalen-Lippe</span>
+              <span>Bielefeld &bull; Ostwestfalen-Lippe &bull; Remote & Vor Ort</span>
             </div>
 
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-navy-950 tracking-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-950 tracking-tight leading-tight">
               Softwareentwicklung mit Handwerkerehre & Ingenieursanspruch.
             </h2>
 
-            <div className="space-y-4 text-base text-slate-600 leading-relaxed">
+            <div className="space-y-4 text-base text-slate-600 leading-relaxed font-normal">
               <p>
-                Hallo, ich bin <strong className="text-navy-900 font-semibold">Markus Kaufmann</strong>,
-                Inhaber von MK Applications. Als pragmatischer IT- und Full-Stack-Architekt aus Bielefeld
-                entwickle ich digitale Lösungen, die echte Probleme lösen – und keine neuen schaffen.
+                Hallo, ich bin <strong className="text-slate-900 font-bold">Markus Kaufmann</strong>,
+                Inhaber und leitender Softwarearchitekt von MK Applications. Ich entwickle robuste,
+                zukunftssichere Webanwendungen und Vereinsplattformen, die exakt auf die Bedürfnisse
+                ihrer Anwender zugeschnitten sind.
               </p>
               <p>
-                Ob Sie als Sport- oder Fischereiverein von Papierakten und Excel-Chaos befreit werden
-                möchten oder als mittelständisches Unternehmen eine hochperformante Cloud-Anwendung
-                benötigen: Ich begleite Sie von der ersten Architektur-Skizze bis zum produktiven
-                Betrieb auf Microsoft Azure.
+                Mein Schwerpunkt liegt in der Schnittmenge aus moderner Webtechnologie (React, TypeScript,
+                PWAs) und hochwirtschaftlichen Cloud-Architekturen auf Microsoft Azure. Ob
+                Vereinsplattform oder B2B-Plattform: Ich begleite Sie partnerschaftlich von der ersten
+                Konzeption bis zum produktiven Dauerbetrieb.
               </p>
             </div>
 
-            {/* Quote / Philosophy Box */}
-            <div className="bg-white p-5 rounded-2xl border-l-4 border-l-cyan-500 border-slate-200 shadow-sm">
-              <p className="text-sm italic text-slate-700">
-                &bdquo;Gute Software muss nicht kompliziert sein. Sie muss robust, wartungsarm und für den
-                Nutzer intuitiv verständlich sein. Das ist der Anspruch von MK Applications.&ldquo;
+            {/* Architecture Quote Box */}
+            <div className="bg-white p-6 rounded-2xl border-l-4 border-l-cyan-500 border-slate-200 shadow-sm">
+              <p className="text-sm sm:text-base italic text-slate-700 leading-relaxed">
+                &bdquo;Gute Software muss nicht komplex in der Bedienung sein. Sie muss robust, schnell und
+                wirtschaftlich im Betrieb sein – und dem Menschen die Arbeit abnehmen, nicht neue machen.&ldquo;
               </p>
-              <div className="mt-2 text-xs font-bold text-navy-900">
-                — Markus Kaufmann, Inhaber & Cloud-Architekt
+              <div className="mt-3 text-xs font-bold text-slate-900 flex items-center gap-2">
+                <span>Markus Kaufmann</span>
+                <span className="text-slate-400">&bull;</span>
+                <span className="text-slate-500 font-medium">Inhaber & Senior Cloud-Architekt</span>
               </div>
             </div>
           </div>
 
-          {/* Right Column: Tech Stack & Badges */}
+          {/* Right Column: Tech Matrix & Trust Guarantee */}
           <div className="lg:col-span-6 space-y-6">
-            <div className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-lg">
-              <div className="flex items-center gap-2 mb-6">
-                <Terminal className="w-5 h-5 text-electric-600" />
-                <h3 className="text-lg font-bold text-navy-950">
-                  Moderner & zukunftssicherer Tech-Stack
+            <div className="bg-white rounded-3xl p-7 sm:p-9 border border-slate-200 shadow-xl">
+              <div className="flex items-center gap-2.5 mb-6">
+                <Terminal className="w-5 h-5 text-cyan-600" />
+                <h3 className="text-lg font-black text-slate-950 tracking-tight">
+                  Technologie-Stack & Architektur-Kompetenz
                 </h3>
               </div>
 
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-8">
-                {techStack.map((tech) => (
-                  <div
-                    key={tech.name}
-                    className={`p-3 rounded-xl border text-center transition-all ${
-                      tech.highlight
-                        ? 'bg-slate-50 border-slate-300/80 hover:border-cyan-400 hover:shadow-sm'
-                        : 'bg-white border-slate-200 text-slate-600'
-                    }`}
-                  >
-                    <span className="text-[10px] text-slate-400 uppercase tracking-wider block font-semibold">
-                      {tech.category}
+              {/* Categorized Skills */}
+              <div className="space-y-4 mb-8">
+                {techCategories.map((cat, i) => (
+                  <div key={i} className="bg-slate-50 p-4 rounded-2xl border border-slate-200">
+                    <span className="text-[11px] font-bold text-slate-500 uppercase tracking-wider block mb-2 font-mono">
+                      {cat.title}
                     </span>
-                    <span className="font-bold text-xs sm:text-sm text-navy-950 block mt-0.5">
-                      {tech.name}
-                    </span>
+                    <div className="flex flex-wrap gap-1.5">
+                      {cat.skills.map((skill) => (
+                        <span
+                          key={skill}
+                          className="text-xs font-semibold bg-white text-slate-800 px-2.5 py-1 rounded-lg border border-slate-200 shadow-2xs"
+                        >
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
                   </div>
                 ))}
               </div>
 
+              {/* Trust Factors */}
               <div className="border-t border-slate-100 pt-6">
-                <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-4">
+                <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-4 font-mono">
                   Die MK Applications Vertrauensgarantie
                 </h4>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {trustFactors.map((factor, i) => {
                     const Icon = factor.icon;
                     return (
-                      <div key={i} className="flex items-start gap-2.5">
-                        <div className="w-7 h-7 rounded-lg bg-navy-50 text-navy-700 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <div key={i} className="flex items-start gap-3">
+                        <div className="w-8 h-8 rounded-xl bg-slate-100 text-slate-800 flex items-center justify-center flex-shrink-0 mt-0.5">
                           <Icon className="w-4 h-4" />
                         </div>
                         <div>
                           <div className="text-xs font-bold text-slate-900">{factor.title}</div>
-                          <div className="text-[11px] text-slate-500 leading-snug">
+                          <div className="text-[11px] text-slate-500 leading-snug mt-0.5">
                             {factor.description}
                           </div>
                         </div>
