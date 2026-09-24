@@ -27,6 +27,11 @@
     color: #0f172a;
     overflow-x: hidden;
   }
+
+  h1, h2, h3, h4 {
+    letter-spacing: -0.028em;
+    font-feature-settings: 'cv02' 1, 'cv03' 1, 'cv04' 1, 'cv11' 1;
+  }
 }
 
 /* Custom modern scrollbar */
