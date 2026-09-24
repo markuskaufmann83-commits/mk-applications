@@ -114,7 +114,7 @@ export const InteractiveHeroMockup: React.FC = () => {
           <div className="bg-gradient-to-r from-slate-900 via-navy-950 to-slate-900 text-white p-3.5 sm:p-4 border-b border-slate-800">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2.5">
-                <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-cyan-500 to-electric-400 flex items-center justify-center font-black text-slate-950 text-xs shadow-md">
+                <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-cyan-500 to-electric-400 flex items-center justify-center font-bold text-slate-950 text-xs shadow-md">
                   MK
                 </div>
                 <div>
@@ -374,7 +374,7 @@ export const InteractiveHeroMockup: React.FC = () => {
                 <div className="grid grid-cols-2 gap-2 text-xs">
                   <div className="bg-slate-900/90 p-3 rounded-xl border border-slate-800">
                     <span className="text-[10px] text-slate-400 font-medium">Aktive Mitglieder</span>
-                    <div className="text-xl font-black text-white mt-0.5">482</div>
+                    <div className="text-xl font-bold text-white mt-0.5">482</div>
                     <div className="flex items-center gap-1 text-[10px] text-emerald-400 font-semibold mt-0.5">
                       <TrendingUp className="w-3 h-3" />
                       <span>+14 in diesem Monat</span>
@@ -382,7 +382,7 @@ export const InteractiveHeroMockup: React.FC = () => {
                   </div>
                   <div className="bg-slate-900/90 p-3 rounded-xl border border-slate-800">
                     <span className="text-[10px] text-slate-400 font-medium">Offene Arbeitsstunden</span>
-                    <div className="text-xl font-black text-cyan-400 mt-0.5">38 Std.</div>
+                    <div className="text-xl font-bold text-cyan-400 mt-0.5">38 Std.</div>
                     <span className="text-[10px] text-slate-400">92% Quote erfüllt</span>
                   </div>
                 </div>

@@ -20,11 +20,11 @@ export const Services: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 md:mb-20">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cyan-50 border border-cyan-200/80 text-xs font-bold text-cyan-800 mb-3">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cyan-50 border border-cyan-200/80 text-xs font-semibold text-cyan-800 mb-3">
             <Zap className="w-3.5 h-3.5 text-cyan-600" />
             <span>Senior IT-Engineering & Expertise</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-950 tracking-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight">
             Maßgeschneiderte Softwarearchitektur für konkrete Ergebnisse.
           </h2>
           <p className="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
@@ -49,7 +49,7 @@ export const Services: React.FC = () => {
                 </span>
               </div>
 
-              <h3 className="text-2xl sm:text-3xl font-black tracking-tight text-white mb-3">
+              <h3 className="text-2xl sm:text-3xl font-bold tracking-tight text-white mb-3">
                 Vereins- & Verbandssoftware
               </h3>
               <p className="text-sm sm:text-base text-slate-300 leading-relaxed mb-6 max-w-xl">
@@ -102,7 +102,7 @@ export const Services: React.FC = () => {
                 </span>
               </div>
 
-              <h3 className="text-xl sm:text-2xl font-black text-slate-950 mb-3">
+              <h3 className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight mb-3">
                 Mobile & Progressive Web Apps
               </h3>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-6">
@@ -150,7 +150,7 @@ export const Services: React.FC = () => {
                 </span>
               </div>
 
-              <h3 className="text-xl sm:text-2xl font-black text-slate-950 mb-3">
+              <h3 className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight mb-3">
                 Managed Azure Cloud & Serverless
               </h3>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-6">
@@ -198,7 +198,7 @@ export const Services: React.FC = () => {
                 </span>
               </div>
 
-              <h3 className="text-2xl sm:text-3xl font-black text-slate-950 mb-3">
+              <h3 className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mb-3">
                 Webdesign & B2B-Prozessdigitalisierung
               </h3>
               <p className="text-sm sm:text-base text-slate-600 leading-relaxed mb-6 max-w-xl">

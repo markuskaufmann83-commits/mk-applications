@@ -87,7 +87,7 @@ export const Logo: React.FC<LogoProps> = ({
       <div className="flex flex-col justify-center">
         <div className="flex items-center gap-1.5 leading-none">
           <span
-            className={`${titleSizes[size]} font-black tracking-tight ${
+            className={`${titleSizes[size]} font-bold tracking-tight ${
               isDark ? 'text-white' : 'text-slate-950'
             }`}
           >

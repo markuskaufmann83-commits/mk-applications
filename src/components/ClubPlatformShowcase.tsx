@@ -62,16 +62,16 @@ export const ClubPlatformShowcase: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-slate-200/90 text-xs font-bold text-slate-800 shadow-sm mb-3">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-slate-200/90 text-xs font-semibold text-slate-700 shadow-sm mb-3">
             <Sparkles className="w-3.5 h-3.5 text-cyan-600" />
             <span>Branchenlösung für Vereine & Verbände</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-950 tracking-tight">
-            Schluss mit Zettelwirtschaft & Excel-Chaos.
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight leading-tight">
+            Modulare Vereins- & Verbandsplattform.
           </h2>
           <p className="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
-            Die modulare Multi-Tenant Vereinsplattform von MK Applications passt sich
-            schlüsselfertig an Farben, Wappen und Abläufe Ihrer Organisation an.
+            Verwaltung, rechtssichere Fachmodule und digitale Mitgliederausweise – vereint in einer
+            intuitiven, maßgeschneiderten PWA.
           </p>
         </div>
 
@@ -128,14 +128,14 @@ export const ClubPlatformShowcase: React.FC = () => {
           >
             <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
               <div className="flex items-center gap-4">
-                <div className="w-14 h-14 rounded-2xl bg-white/15 backdrop-blur-md border border-white/30 flex items-center justify-center font-black text-xl shadow-inner">
+                <div className="w-14 h-14 rounded-2xl bg-white/15 backdrop-blur-md border border-white/30 flex items-center justify-center font-bold text-xl shadow-inner">
                   {selectedTheme.name.slice(0, 3)}
                 </div>
                 <div>
                   <div className="inline-block text-[10px] bg-white/20 font-bold uppercase tracking-wider px-2 py-0.5 rounded-full mb-1">
                     {selectedTheme.category}
                   </div>
-                  <h3 className="text-xl sm:text-2xl font-black tracking-tight">{selectedTheme.name}</h3>
+                  <h3 className="text-xl sm:text-2xl font-bold tracking-tight">{selectedTheme.name}</h3>
                   <p className="text-xs sm:text-sm text-white/80">{selectedTheme.tagline}</p>
                 </div>
               </div>
@@ -214,7 +214,7 @@ export const ClubPlatformShowcase: React.FC = () => {
                     <Fish className="w-3.5 h-3.5 text-teal-600" />
                     <span>Fachmodul Fischereiwesen</span>
                   </div>
-                  <h4 className="text-2xl sm:text-3xl font-black text-slate-950 tracking-tight">
+                  <h4 className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">
                     Gesetzeskonforme Fangerfassung ohne nasse Papierhefte.
                   </h4>
                   <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
@@ -249,11 +249,11 @@ export const ClubPlatformShowcase: React.FC = () => {
                     <div className="grid grid-cols-2 gap-2.5">
                       <div className="bg-slate-900 p-3 rounded-xl border border-slate-800">
                         <span className="text-slate-400 block text-[10px] font-medium">Fischart</span>
-                        <span className="font-black text-white text-sm">Zander (Sander lucioperca)</span>
+                        <span className="font-bold text-white text-sm">Zander (Sander lucioperca)</span>
                       </div>
                       <div className="bg-slate-900 p-3 rounded-xl border border-slate-800">
                         <span className="text-slate-400 block text-[10px] font-medium">Länge & Gewicht</span>
-                        <span className="font-black text-teal-300 text-sm">68 cm &bull; 3,2 kg</span>
+                        <span className="font-bold text-teal-300 text-sm">68 cm &bull; 3,2 kg</span>
                       </div>
                     </div>
                     <div className="bg-slate-900 p-3 rounded-xl border border-slate-800">
@@ -279,7 +279,7 @@ export const ClubPlatformShowcase: React.FC = () => {
                     <Clock className="w-3.5 h-3.5 text-navy-600" />
                     <span>Spartenübergreifendes Modul</span>
                   </div>
-                  <h4 className="text-2xl sm:text-3xl font-black text-slate-950 tracking-tight">
+                  <h4 className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">
                     Pflichtstunden transparent erfassen & abrechnen.
                   </h4>
                   <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
@@ -344,7 +344,7 @@ export const ClubPlatformShowcase: React.FC = () => {
                     <QrCode className="w-3.5 h-3.5 text-electric-600" />
                     <span>Zutritt & Berechtigungen</span>
                   </div>
-                  <h4 className="text-2xl sm:text-3xl font-black text-slate-950 tracking-tight">
+                  <h4 className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">
                     Plastikkarten adé: Der digitale Ausweis auf jedem Smartphone.
                   </h4>
                   <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
@@ -379,7 +379,7 @@ export const ClubPlatformShowcase: React.FC = () => {
                     </div>
 
                     <div className="flex items-center gap-3.5 mb-4">
-                      <div className="w-12 h-12 rounded-xl bg-slate-800 flex items-center justify-center font-black text-white border border-slate-700 text-lg shadow-inner">
+                      <div className="w-12 h-12 rounded-xl bg-slate-800 flex items-center justify-center font-bold text-white border border-slate-700 text-lg shadow-inner">
                         MK
                       </div>
                       <div>
@@ -415,7 +415,7 @@ export const ClubPlatformShowcase: React.FC = () => {
                     <Gauge className="w-3.5 h-3.5 text-cyan-600" />
                     <span>Infrastruktur & Abrechnung</span>
                   </div>
-                  <h4 className="text-2xl sm:text-3xl font-black text-slate-950 tracking-tight">
+                  <h4 className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">
                     Strom-, Wasser- und Liegeplatzverwaltung per Smartphone-Foto.
                   </h4>
                   <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
@@ -453,12 +453,12 @@ export const ClubPlatformShowcase: React.FC = () => {
                       <ArrowRight className="w-4 h-4 text-slate-500" />
                       <div className="text-right">
                         <span className="text-[10px] text-cyan-400 block font-medium">Neuer Stand (September 2026)</span>
-                        <span className="font-mono text-cyan-300 text-base font-black">1.584 kWh</span>
+                        <span className="font-mono text-cyan-300 text-base font-bold">1.584 kWh</span>
                       </div>
                     </div>
                     <div className="p-3 bg-slate-900 rounded-xl border border-slate-800 flex justify-between items-center">
                       <span className="text-slate-300 font-medium">Verbrauch: 164 kWh &agrave; 0,42 €</span>
-                      <span className="font-black text-white text-sm">68,88 €</span>
+                      <span className="font-bold text-white text-sm">68,88 €</span>
                     </div>
                     <div className="text-emerald-400 text-xs flex items-center gap-1.5 font-medium">
                       <CheckCircle2 className="w-4 h-4 flex-shrink-0" />

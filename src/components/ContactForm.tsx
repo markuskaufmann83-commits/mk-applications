@@ -106,7 +106,7 @@ export const ContactForm: React.FC = () => {
               <span>Direkter Kontakt & Anfrage</span>
             </div>
 
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-950 tracking-tight leading-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight leading-tight">
               Lassen Sie uns über Ihr Vorhaben sprechen.
             </h2>
 
@@ -181,7 +181,7 @@ export const ContactForm: React.FC = () => {
                   <div className="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center mx-auto shadow-inner">
                     <CheckCircle2 className="w-10 h-10" />
                   </div>
-                  <h3 className="text-2xl font-black text-slate-950 tracking-tight">
+                  <h3 className="text-2xl font-bold text-slate-900 tracking-tight">
                     Vielen Dank für Ihre Anfrage!
                   </h3>
                   <p className="text-slate-600 max-w-md mx-auto text-sm leading-relaxed">

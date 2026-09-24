@@ -58,7 +58,7 @@ export const AboutMe: React.FC = () => {
               <span>Bielefeld &bull; Ostwestfalen-Lippe &bull; Remote & Vor Ort</span>
             </div>
 
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-950 tracking-tight leading-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight leading-tight">
               Softwareentwicklung mit Handwerkerehre & Ingenieursanspruch.
             </h2>
 
@@ -96,7 +96,7 @@ export const AboutMe: React.FC = () => {
             <div className="bg-white rounded-3xl p-7 sm:p-9 border border-slate-200 shadow-xl">
               <div className="flex items-center gap-2.5 mb-6">
                 <Terminal className="w-5 h-5 text-cyan-600" />
-                <h3 className="text-lg font-black text-slate-950 tracking-tight">
+                <h3 className="text-lg font-bold text-slate-900 tracking-tight">
                   Technologie-Stack & Architektur-Kompetenz
                 </h3>
               </div>

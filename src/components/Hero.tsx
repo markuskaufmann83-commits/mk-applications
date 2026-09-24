@@ -23,7 +23,7 @@ export const Hero: React.FC = () => {
             </div>
 
             {/* Main Headline */}
-            <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-black text-slate-950 tracking-[-0.03em] leading-[1.12]">
+            <h1 className="text-4xl sm:text-5xl lg:text-[3.25rem] font-bold text-slate-900 tracking-tight leading-[1.15]">
               Moderne Apps & Web-Lösungen –{' '}
               <span className="bg-gradient-to-r from-navy-800 via-electric-600 to-cyan-500 bg-clip-text text-transparent">
                 maßgeschneidert
@@ -58,21 +58,21 @@ export const Hero: React.FC = () => {
             {/* Metrics Bar */}
             <div className="pt-6 border-t border-slate-200/80 grid grid-cols-3 gap-4 text-left">
               <div>
-                <div className="text-xl sm:text-2xl font-black text-slate-950 tracking-tight">0,00 €</div>
+                <div className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight">0,00 €</div>
                 <div className="text-[11px] font-semibold text-slate-500 uppercase tracking-wider mt-0.5">
                   Server-Leerlauf
                 </div>
               </div>
 
               <div>
-                <div className="text-xl sm:text-2xl font-black text-cyan-600 tracking-tight">100%</div>
+                <div className="text-xl sm:text-2xl font-bold text-cyan-600 tracking-tight">100%</div>
                 <div className="text-[11px] font-semibold text-slate-500 uppercase tracking-wider mt-0.5">
                   DSGVO / EU-Cloud
                 </div>
               </div>
 
               <div>
-                <div className="text-xl sm:text-2xl font-black text-slate-950 tracking-tight">100/100</div>
+                <div className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight">100/100</div>
                 <div className="text-[11px] font-semibold text-slate-500 uppercase tracking-wider mt-0.5">
                   Lighthouse Score
                 </div>

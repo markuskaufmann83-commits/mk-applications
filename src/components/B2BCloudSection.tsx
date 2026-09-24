@@ -40,7 +40,7 @@ export const B2BCloudSection: React.FC = () => {
               <span>B2B & Cloud Architekturen</span>
             </div>
 
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-950 tracking-tight leading-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight leading-tight">
               Wirtschaftliche Cloud-Systeme für Mittelstand & Macher.
             </h2>
 
@@ -61,7 +61,7 @@ export const B2BCloudSection: React.FC = () => {
                   <span className="text-[10px] text-slate-500 font-semibold block uppercase">
                     Klassische Server
                   </span>
-                  <div className="text-xl font-black text-rose-600 mt-1">ab 150 € / Mtl.</div>
+                  <div className="text-xl font-bold text-rose-600 mt-1">ab 150 € / Mtl.</div>
                   <span className="text-[11px] text-slate-500 block mt-1">
                     Feste Kosten auch nachts und bei Null Zugriffen
                   </span>
@@ -72,7 +72,7 @@ export const B2BCloudSection: React.FC = () => {
                   <span className="text-[10px] text-cyan-400 font-bold block uppercase font-mono">
                     MK Applications Azure
                   </span>
-                  <div className="text-xl font-black text-white mt-1">0,00 € / Mtl.</div>
+                  <div className="text-xl font-bold text-white mt-1">0,00 € / Mtl.</div>
                   <span className="text-[11px] text-slate-300 block mt-1">
                     Free Tier Kontingent & Pay-per-Execution
                   </span>
@@ -136,7 +136,7 @@ export const B2BCloudSection: React.FC = () => {
                 className="bg-slate-50 border border-slate-200 rounded-2xl p-6 hover:bg-white hover:border-slate-300 hover:shadow-lg transition-all duration-200 relative group"
               >
                 <div className="flex items-start gap-4">
-                  <div className="w-11 h-11 rounded-xl bg-slate-900 text-cyan-400 flex items-center justify-center flex-shrink-0 font-mono font-black text-sm shadow-sm group-hover:scale-105 transition-transform">
+                  <div className="w-11 h-11 rounded-xl bg-slate-900 text-cyan-400 flex items-center justify-center flex-shrink-0 font-mono font-bold text-sm shadow-sm group-hover:scale-105 transition-transform">
                     {step.step}
                   </div>
                   <div>
