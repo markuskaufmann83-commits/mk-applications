@@ -38,10 +38,8 @@ jobs:
         run: |
           if [ -d "api" ] && [ -f "api/package.json" ]; then
             cd api
-            npm ci --production || npm install --production
-            if npm run | grep -q "build"; then
-              npm run build
-            fi
+            npm install
+            npm run build
             cd ..
           fi
 
