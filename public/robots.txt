@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mk-applications.de/sitemap.xml
+Sitemap: https://www.mk-applications.de/sitemap.xml
